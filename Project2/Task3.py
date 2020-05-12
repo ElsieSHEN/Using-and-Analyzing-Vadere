@@ -6,7 +6,6 @@ import shutil
 import math
 import numpy as np
 import matplotlib.pyplot as plt
-import numpy as np
 
 
 current_path = os.path.join(os.path.dirname(os.path.realpath(__file__)))
@@ -22,10 +21,10 @@ in_file.close()
 #rename
 tmp = data["name"]
 data["name"] = "rimea_06_corner_task3.scenario"
-#add pedestrian
 
+#add pedestrian
 tmp = data["scenario"]["topography"]["dynamicElements"]
-ped =[{
+ped ={
         "source" : None,
         "targetIds" : [ 2 ],
         "position" : {
@@ -64,11 +63,15 @@ ped =[{
         "groupSizes" : [ ],
         "modelPedestrianMap" : None,
         "type" : "PEDESTRIAN"
-      }]
+      }
+tmp.append(ped)
 
-data["scenario"]["topography"]["dynamicElements"] = ped
+data["scenario"]["topography"]["dynamicElements"] = tmp
 
 #save the file with new name
 out_file = open(base_dir + new_filename, "w+")
 out_file.write(json.dumps(data))
 out_file.close()
+
+#Call vadere-console.jar
+os.system('cmd /c "java -jar vadere-console.jar scenario-run --scenario-file "/senarios/rimea_06_corner_task3.scenario" --output-dir output')
