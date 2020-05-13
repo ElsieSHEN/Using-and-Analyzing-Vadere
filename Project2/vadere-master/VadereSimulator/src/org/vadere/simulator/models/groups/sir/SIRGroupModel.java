@@ -130,7 +130,7 @@ public class SIRGroupModel extends AbstractGroupModel<SIRGroup> {
 
 	private void initializeGroupsOfInitialPedestrians() {
 		// TODO: assign pedestrians to INFECTED or SUSCEPTIBLE groups.
-		
+
 		// get all pedestrians already in topography
 		DynamicElementContainer<Pedestrian> c = topography.getPedestrianDynamicElements();
 
@@ -151,7 +151,7 @@ public class SIRGroupModel extends AbstractGroupModel<SIRGroup> {
 			// build groups depending on group ids and register pedestrian
 			for (Integer id : groups.keySet()) {
 				List<Pedestrian> peds = groups.get(id);
-				CentroidGroup group = getNewGroup(id, peds.size());
+				SIRGroup group = getNewGroup(id, peds.size());
 				peds.forEach(p -> {
 					// update group id / size info on ped
 					p.getGroupIds().add(id);
