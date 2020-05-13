@@ -127,15 +127,45 @@ public class SIRGroupModel extends AbstractGroupModel<SIRGroup> {
 		}
 	}
 
+
 	private void initializeGroupsOfInitialPedestrians() {
+		// TODO: assign pedestrians to INFECTED or SUSCEPTIBLE groups.
+		
 		// get all pedestrians already in topography
 		DynamicElementContainer<Pedestrian> c = topography.getPedestrianDynamicElements();
 
 		if (c.getElements().size() > 0) {
-			// TODO: 
-			// fill in code to assign pedestrians in the scenario at the beginning 
-			// (i.e., not created by a source)
-            //  to INFECTED or SUSCEPTIBLE groups.
+			Map<Integer, List<Pedestrian>> groups = new HashMap<>();
+
+			// aggregate group data
+			c.getElements().forEach(p -> {
+				for (Integer id : p.getGroupIds()) {
+					List<Pedestrian> peds = groups.computeIfAbsent(id, k -> new ArrayList<>());
+					// empty group id and size values, will be set later on
+					p.setGroupIds(new LinkedList<>());
+					p.setGroupSizes(new LinkedList<>());
+					peds.add(p);
+				}
+			});
+
+			// build groups depending on group ids and register pedestrian
+			for (Integer id : groups.keySet()) {
+				List<Pedestrian> peds = groups.get(id);
+				CentroidGroup group = getNewGroup(id, peds.size());
+				peds.forEach(p -> {
+					// update group id / size info on ped
+					p.getGroupIds().add(id);
+					p.getGroupSizes().add(peds.size());
+					group.addMember(p);
+					registerMember(p, group);
+				});
+			}
+
+			// set latest groupid to max id + 1
+			Optional<Integer> max = groups.keySet().stream().max(Integer::compareTo);
+			if (max.isPresent()) {
+				nextFreeGroupId = new AtomicInteger(max.get() + 1);
+			}
 		}
 	}
 
