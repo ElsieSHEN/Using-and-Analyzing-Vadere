@@ -1,0 +1,413 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ClassListGenerator<gui>",
+            "request": "launch",
+            "mainClass": "org.vadere.gui.compileScripts.ClassListGenerator",
+            "projectName": "gui"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PostVisualisation<gui>",
+            "request": "launch",
+            "mainClass": "org.vadere.gui.postvisualization.PostVisualisation",
+            "projectName": "gui"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ScriptParser<gui>",
+            "request": "launch",
+            "mainClass": "org.vadere.gui.postvisualization.utils.ScriptParser",
+            "projectName": "gui"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RecordTriangulationMovie<gui>",
+            "request": "launch",
+            "mainClass": "org.vadere.gui.projectview.RecordTriangulationMovie",
+            "projectName": "gui"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-VadereApplication<gui>",
+            "request": "launch",
+            "mainClass": "org.vadere.gui.projectview.VadereApplication",
+            "projectName": "gui"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Manager<manager>",
+            "request": "launch",
+            "mainClass": "org.vadere.manager.Manager",
+            "projectName": "manager"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ConsoleReader<manager>",
+            "request": "launch",
+            "mainClass": "org.vadere.manager.client.ConsoleReader",
+            "projectName": "manager"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TestClient<manager>",
+            "request": "launch",
+            "mainClass": "org.vadere.manager.client.TestClient",
+            "projectName": "manager"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TraCIEntryPoint<manager>",
+            "request": "launch",
+            "mainClass": "org.vadere.manager.traci.py4j.TraCIEntryPoint",
+            "projectName": "manager"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PerformanceTest<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.geometry.PerformanceTest",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TestUniTriangulation<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.geometry.triangulation.TestUniTriangulation",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TestUniform<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.geometry.triangulation.TestUniform",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TestVisual<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.geometry.triangulation.TestVisual",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SpaceFillingCurve<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.meshing.SpaceFillingCurve",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BackgroundMeshExamples<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.meshing.examples.BackgroundMeshExamples",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DelaunayTriangulationExamples<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.meshing.examples.DelaunayTriangulationExamples",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-EikMeshExamples<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.meshing.examples.EikMeshExamples",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-EikMeshPlots<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.meshing.examples.EikMeshPlots",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-EikMeshPoly<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.meshing.examples.EikMeshPoly",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MeshExamples<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.meshing.examples.MeshExamples",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RegularRefinement<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.meshing.examples.RegularRefinement",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RivaraBisection<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.meshing.examples.RivaraBisection",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RuppertExamples<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.meshing.examples.RuppertExamples",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-IncrementalTriangulation<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.meshing.mesh.gen.IncrementalTriangulation",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BowyerWatsonSlow<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.meshing.mesh.triangulation.BowyerWatsonSlow",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CPULaplacianSmoothing<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.meshing.mesh.triangulation.plots.CPULaplacianSmoothing",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DistMeshPlotsSmall<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.meshing.mesh.triangulation.plots.DistMeshPlotsSmall",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DistMeshTests<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.meshing.mesh.triangulation.plots.DistMeshTests",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-EikMeshPlots<meshing>(1)",
+            "request": "launch",
+            "mainClass": "org.vadere.meshing.mesh.triangulation.plots.EikMeshPlots",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-EikMeshTests<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.meshing.mesh.triangulation.plots.EikMeshTests",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RealWorldPlot<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.meshing.mesh.triangulation.plots.RealWorldPlot",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RunTimeCPU<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.meshing.mesh.triangulation.plots.RunTimeCPU",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RunTimeGPUEdgeBased<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.meshing.mesh.triangulation.plots.RunTimeGPUEdgeBased",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RunTimeGPUVertexBased<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.meshing.mesh.triangulation.plots.RunTimeGPUVertexBased",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SierpinskyPlot<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.meshing.mesh.triangulation.plots.SierpinskyPlot",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TriangleQuality<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.meshing.mesh.triangulation.plots.TriangleQuality",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-VisualTestCPU<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.meshing.mesh.triangulation.plots.VisualTestCPU",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-VisualTestGPUEdgeBased<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.meshing.mesh.triangulation.plots.VisualTestGPUEdgeBased",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-VisualTestGPUVertexBased<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.meshing.mesh.triangulation.plots.VisualTestGPUVertexBased",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RunTimeCPU<meshing>(1)",
+            "request": "launch",
+            "mainClass": "org.vadere.meshing.mesh.triangulation.plots.qualities.RunTimeCPU",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TriangleQuality<meshing>(1)",
+            "request": "launch",
+            "mainClass": "org.vadere.meshing.mesh.triangulation.plots.qualities.TriangleQuality",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CLDistMesh<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.meshing.opencl.CLDistMesh",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CLDistMeshHE<meshing>",
+            "request": "launch",
+            "mainClass": "org.vadere.meshing.opencl.CLDistMeshHE",
+            "projectName": "meshing"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AssertionLog<simulator>",
+            "request": "launch",
+            "mainClass": "org.vadere.simulator.entrypoints.cmd.AssertionLog",
+            "projectName": "simulator"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-VadereConsole<simulator>",
+            "request": "launch",
+            "mainClass": "org.vadere.simulator.entrypoints.cmd.VadereConsole",
+            "projectName": "simulator"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DummyStairs<simulator>",
+            "request": "launch",
+            "mainClass": "org.vadere.simulator.models.osm.stairOptimization.DummyStairs",
+            "projectName": "simulator"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PerformanceTriangleFMM<simulator>",
+            "request": "launch",
+            "mainClass": "org.vadere.simulator.models.potential.solver.PerformanceTriangleFMM",
+            "projectName": "simulator"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FMMTriangulationExamples<simulator>",
+            "request": "launch",
+            "mainClass": "org.vadere.simulator.models.potential.solver.calculators.mesh.FMMTriangulationExamples",
+            "projectName": "simulator"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MigrationUtil<simulator>",
+            "request": "launch",
+            "mainClass": "org.vadere.simulator.projects.migration.incident.helper.MigrationUtil",
+            "projectName": "simulator"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TargetVersionV0_8<simulator>",
+            "request": "launch",
+            "mainClass": "org.vadere.simulator.projects.migration.jsontranformation.json.TargetVersionV0_8",
+            "projectName": "simulator"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RealWorldPlot<simulator>",
+            "request": "launch",
+            "mainClass": "org.vadere.simulator.triangulation.RealWorldPlot",
+            "projectName": "simulator"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StimulusInfoStore<state>",
+            "request": "launch",
+            "mainClass": "org.vadere.state.psychology.perception.json.StimulusInfoStore",
+            "projectName": "state"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TextScenarioPrinter<utils>",
+            "request": "launch",
+            "mainClass": "org.vadere.util.io.TextScenarioPrinter",
+            "projectName": "utils"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-WatchDir<utils>",
+            "request": "launch",
+            "mainClass": "org.vadere.util.io.filewatcher.WatchDir",
+            "projectName": "utils"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CLDemo<utils>",
+            "request": "launch",
+            "mainClass": "org.vadere.util.opencl.CLDemo",
+            "projectName": "utils"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CLDemo<utils>(1)",
+            "request": "launch",
+            "mainClass": "org.vadere.util.opencl.examples.CLDemo",
+            "projectName": "utils"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CLVectorSum<utils>",
+            "request": "launch",
+            "mainClass": "org.vadere.util.opencl.examples.CLVectorSum",
+            "projectName": "utils"
+        }
+    ]
+}
