@@ -52,7 +52,9 @@ app.layout = html.Div(children=[
                 ]),
                 dbc.Col([
                      dcc.Input(id='input-folder-path', type='text', size='200',
-                               value= '/home/ubuntujan/workspace/ML_Lab/Crowd_Model_WS2/Crowd_Model_WS2/Project2',
+
+                               value=r'D:/好好学习/2019-2020/TUM/Machine Learning/Exercises/2/Crowd_Model_WS2/Project2',
+
                                placeholder='Insert the path to the output folders here', debounce=True)
                 ])
                 ]),
