@@ -199,10 +199,17 @@ public class SIRGroupModel extends AbstractGroupModel<SIRGroup> {
 		// *********************
 		if (c.getElements().size() > 0){
 			for(Pedestrian p : c.getElements()){
-				SIRGroup g = getGroup(p);
-				if (g.getID() == SIRType.ID_INFECTED.ordinal()){
-					elementRemoved(p);
-					assignToGroup(p, SIRType.ID_RECOVERED.ordinal());
+				if(!getGroupsById().containsKey(SIRType.ID_RECOVERED.ordinal())) {
+					SIRGroup g = getNewGroup(SIRType.ID_RECOVERED.ordinal(), Integer.MAX_VALUE / 2);
+					getGroupsById().put(SIRType.ID_RECOVERED.ordinal(), g);
+				}
+				//if (this.random.nextDouble() < attributesSIRG.getRecoverRate()) {
+				if (this.random.nextDouble() < 0.5) {
+					SIRGroup g = getGroup(p);
+					if (g.getID() == SIRType.ID_INFECTED.ordinal()) {
+						elementRemoved(p);
+						assignToGroup(p, SIRType.ID_RECOVERED.ordinal());
+					}
 				}
 			}
 		}
