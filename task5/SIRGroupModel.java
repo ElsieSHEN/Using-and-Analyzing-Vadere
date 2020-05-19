@@ -33,7 +33,9 @@ public class SIRGroupModel extends AbstractGroupModel<SIRGroup> {
 	private Topography topography;
 	private IPotentialFieldTarget potentialFieldTarget;
 	private int totalInfected = 0;
+	// Add variables for number of Recovered person and a counter to decouple timestep with infection rate
 	private int totalRecovered = 0;
+	private double tempCounter;
 	private LinkedCellsGrid<Pedestrian> linkedgrid;
 
 	public SIRGroupModel() {
@@ -49,6 +51,8 @@ public class SIRGroupModel extends AbstractGroupModel<SIRGroup> {
 		this.random = random;
         this.totalInfected = 0;
         this.totalRecovered = 0;
+        // Initialize counter with 1, so first update will be when 1 second has passed
+        this.tempCounter = 1;
 	}
 
 	@Override
@@ -197,40 +201,45 @@ public class SIRGroupModel extends AbstractGroupModel<SIRGroup> {
 
 	@Override
 	public void update(final double simTimeInSec) {
-		// check the positions of all pedestrians and switch groups to INFECTED (or REMOVED).
-		DynamicElementContainer<Pedestrian> c = topography.getPedestrianDynamicElements();
+		if (simTimeInSec >= tempCounter) {
+			System.out.println("tempcounter does update at: " + simTimeInSec);
+			// check the positions of all pedestrians and switch groups to INFECTED (or REMOVED).
+			DynamicElementContainer<Pedestrian> c = topography.getPedestrianDynamicElements();
 
-		//implement recovered
-		// *********************
-		if (c.getElements().size() > 0) {
-			for(Pedestrian p : c.getElements()) {
-				//check all infected ped and set a chance to get recover
-				if(getGroup(p).getID() == SIRType.ID_INFECTED.ordinal() && this.random.nextDouble() < attributesSIRG.getRecoverRate()){
-					SIRGroup g = getGroup(p);
-					elementRemoved(p);
-					assignToGroup(p, SIRType.ID_RECOVERED.ordinal());
-				}
-
-				//*************
-				//not sure which container?
-				// List<Pedestrian> grid = linkedgrid.getObjects(p.getPosition(), attributesSIRG.getInfectionMaxDistance())
-				//*************
-
-				// loop over neighbors and set infected if we are close
-				for(Pedestrian p_neighbor : c.getElements()) {
-					if(p == p_neighbor || getGroup(p_neighbor).getID() != SIRType.ID_INFECTED.ordinal())
-						continue;
-					double dist = p.getPosition().distance(p_neighbor.getPosition());
-					if (dist < attributesSIRG.getInfectionMaxDistance() &&
-							this.random.nextDouble() < attributesSIRG.getInfectionRate()) {
+			//implement recovered
+			// *********************
+			if (c.getElements().size() > 0) {
+				for (Pedestrian p : c.getElements()) {
+					//check all infected ped and set a chance to get recover
+					if (getGroup(p).getID() == SIRType.ID_INFECTED.ordinal() && this.random.nextDouble() < attributesSIRG.getRecoverRate()) {
 						SIRGroup g = getGroup(p);
-						if (g.getID() == SIRType.ID_SUSCEPTIBLE.ordinal()) {
-							elementRemoved(p);
-							assignToGroup(p, SIRType.ID_INFECTED.ordinal());
+						elementRemoved(p);
+						assignToGroup(p, SIRType.ID_RECOVERED.ordinal());
+					}
+
+					//*************
+					//not sure which container?
+					// List<Pedestrian> grid = linkedgrid.getObjects(p.getPosition(), attributesSIRG.getInfectionMaxDistance())
+					//*************
+
+					// loop over neighbors and set infected if we are close
+					for (Pedestrian p_neighbor : c.getElements()) {
+						if (p == p_neighbor || getGroup(p_neighbor).getID() != SIRType.ID_INFECTED.ordinal())
+							continue;
+						double dist = p.getPosition().distance(p_neighbor.getPosition());
+						if (dist < attributesSIRG.getInfectionMaxDistance() &&
+								this.random.nextDouble() < attributesSIRG.getInfectionRate()) {
+							SIRGroup g = getGroup(p);
+							if (g.getID() == SIRType.ID_SUSCEPTIBLE.ordinal()) {
+								elementRemoved(p);
+								assignToGroup(p, SIRType.ID_INFECTED.ordinal());
+							}
 						}
 					}
 				}
 			}
+			// increment counter, so next update will be after next second has passed
+			tempCounter += 1;
 		}
 	}
 }
