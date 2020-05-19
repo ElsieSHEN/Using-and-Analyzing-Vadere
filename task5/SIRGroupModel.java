@@ -16,6 +16,7 @@ import org.vadere.state.attributes.scenario.AttributesAgent;
 import org.vadere.state.scenario.DynamicElementContainer;
 import org.vadere.state.scenario.Pedestrian;
 import org.vadere.state.scenario.Topography;
+import org.vadere.util.geometry.LinkedCellsGrid;
 
 import java.util.*;
 
@@ -33,6 +34,7 @@ public class SIRGroupModel extends AbstractGroupModel<SIRGroup> {
 	private IPotentialFieldTarget potentialFieldTarget;
 	private int totalInfected = 0;
 	private int totalRecovered = 0;
+	private LinkedCellsGrid<Pedestrian> linkedgrid;
 
 	public SIRGroupModel() {
 		this.groupsById = new LinkedHashMap<>();
@@ -76,12 +78,15 @@ public class SIRGroupModel extends AbstractGroupModel<SIRGroup> {
             this.totalInfected += 1;
 			return SIRType.ID_INFECTED.ordinal();
 		}
-
-		// ********************
-		// Need to initialize Recovered state here?
-		// ********************
-
 		else {
+			// ********************
+			// Initialize Recovered state
+			if(!getGroupsById().containsKey(SIRType.ID_SUSCEPTIBLE.ordinal()))
+			{
+				SIRGroup g = getNewGroup(SIRType.ID_SUSCEPTIBLE.ordinal(), Integer.MAX_VALUE/2);
+				getGroupsById().put(SIRType.ID_SUSCEPTIBLE.ordinal(), g);
+			}
+			// ********************
 			if(!getGroupsById().containsKey(SIRType.ID_SUSCEPTIBLE.ordinal()))
 			{
 				SIRGroup g = getNewGroup(SIRType.ID_SUSCEPTIBLE.ordinal(), Integer.MAX_VALUE/2);
@@ -197,26 +202,20 @@ public class SIRGroupModel extends AbstractGroupModel<SIRGroup> {
 
 		//implement recovered
 		// *********************
-		if (c.getElements().size() > 0){
-			for(Pedestrian p : c.getElements()){
-				if(!getGroupsById().containsKey(SIRType.ID_RECOVERED.ordinal())) {
-					SIRGroup g = getNewGroup(SIRType.ID_RECOVERED.ordinal(), Integer.MAX_VALUE / 2);
-					getGroupsById().put(SIRType.ID_RECOVERED.ordinal(), g);
-				}
-				//if (this.random.nextDouble() < attributesSIRG.getRecoverRate()) {
-				if (this.random.nextDouble() < 0.5) {
-					SIRGroup g = getGroup(p);
-					if (g.getID() == SIRType.ID_INFECTED.ordinal()) {
-						elementRemoved(p);
-						assignToGroup(p, SIRType.ID_RECOVERED.ordinal());
-					}
-				}
-			}
-		}
-		// *********************
-
 		if (c.getElements().size() > 0) {
 			for(Pedestrian p : c.getElements()) {
+				//check all infected ped and set a chance to get recover
+				if(getGroup(p).getID() == SIRType.ID_INFECTED.ordinal() && this.random.nextDouble() < attributesSIRG.getRecoverRate()){
+					SIRGroup g = getGroup(p);
+					elementRemoved(p);
+					assignToGroup(p, SIRType.ID_RECOVERED.ordinal());
+				}
+
+				//*************
+				//not sure which container?
+				// List<Pedestrian> grid = linkedgrid.getObjects(p.getPosition(), attributesSIRG.getInfectionMaxDistance())
+				//*************
+
 				// loop over neighbors and set infected if we are close
 				for(Pedestrian p_neighbor : c.getElements()) {
 					if(p == p_neighbor || getGroup(p_neighbor).getID() != SIRType.ID_INFECTED.ordinal())
