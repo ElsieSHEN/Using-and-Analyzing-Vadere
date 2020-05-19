@@ -22,18 +22,18 @@ def file_df_to_count_df(df,
         current_state = ID_SUSCEPTIBLE
         group_counts.loc[group_counts['simTime'] >= 0, 'group-s'] += 1
         for (st, g) in simtime_group:
-            # from susceptible to infected          
+            # from susceptible to infected (S->I)          
             if g != current_state and g == ID_INFECTED and current_state == ID_SUSCEPTIBLE:
                 current_state = g
                 group_counts.loc[group_counts['simTime'] > st, 'group-s'] -= 1
                 group_counts.loc[group_counts['simTime'] > st, 'group-i'] += 1
-            # from infected to recovered
+            # from infected to recovered (I->R)
             elif g != current_state and g == ID_RECOVERED and current_state == ID_INFECTED:
                 current_state = g
                 group_counts.loc[group_counts['simTime'] > st, 'group-i'] -= 1
                 group_counts.loc[group_counts['simTime'] > st, 'group-r'] += 1
                 break
-    print(group_counts[len(group_counts)-2:])
+    print(group_counts[len(group_counts)-1:]) # you can see the final state info in terminal
     return group_counts
 
 

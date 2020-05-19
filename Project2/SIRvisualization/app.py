@@ -55,6 +55,7 @@ app.layout = html.Div(children=[
 
                                value=r'D:/好好学习/2019-2020/TUM/Machine Learning/Exercises/2/Crowd_Model_WS2/Project2',
                                #value=r'D:\TUM_courses\mlcm\Ex2\Crowd_Model_WS2\Project2',
+                               # user can also input the path in the blank
                                placeholder='Insert the path to the output folders here', debounce=True)
                 ])
                 ]),
