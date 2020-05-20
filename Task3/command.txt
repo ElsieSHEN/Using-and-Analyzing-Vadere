@@ -1,0 +1,1 @@
+java -jar vadere-console.jar scenario-run --scenario-file "D:\TUM_courses\mlcm\vadere.v1.0.windows\Task3\scenarios\rimea_06_corner.scenario" --output-dir="D:\TUM_courses\mlcm\vadere.v1.0.windows\Task3\output"

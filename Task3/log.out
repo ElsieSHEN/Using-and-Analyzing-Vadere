@@ -1,0 +1,192 @@
+19:45:05,325   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+19:45:05,327   INFO ScenarioRunSubCommand:51 - Created output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\current_path
+19:45:05,328  ERROR ScenarioRunSubCommand:59 - scenario-file does not exist, is not a regular file or you do not have read permissions: base_dir\filename
+19:46:45,452   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+19:46:45,453   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+19:46:45,454  ERROR ScenarioRunSubCommand:59 - scenario-file does not exist, is not a regular file or you do not have read permissions: base_dir\rimea_06_corner_task3.scenario
+19:47:03,389   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+19:47:03,392   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+19:47:03,393  ERROR ScenarioRunSubCommand:59 - scenario-file does not exist, is not a regular file or you do not have read permissions: rimea_06_corner_task3.scenario
+19:48:28,866   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+19:48:28,868   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+19:48:28,870 STDERR STDOUTERR:32 - topographyError in command:Illegal char <> at index 19: D:\TUM_courses\mlcmadere.v1.0.windows\VadereModelTests\Project_ex2\scenariosimea_06_corner_task3.scenario --output-dir output
+19:48:28,871 STDERR STDOUTERR:32 - java.nio.file.InvalidPathException: Illegal char <> at index 19: D:\TUM_courses\mlcmadere.v1.0.windows\VadereModelTests\Project_ex2\scenariosimea_06_corner_task3.scenario --output-dir output
+19:48:28,871 STDERR STDOUTERR:32 - 	at java.base/sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182)
+19:48:28,871 STDERR STDOUTERR:32 - 	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+19:48:28,871 STDERR STDOUTERR:32 - 	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+19:48:28,872 STDERR STDOUTERR:32 - 	at java.base/sun.nio.fs.WindowsPath.parse(WindowsPath.java:92)
+19:48:28,872 STDERR STDOUTERR:32 - 	at java.base/sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:229)
+19:48:28,872 STDERR STDOUTERR:32 - 	at java.base/java.nio.file.Path.of(Path.java:147)
+19:48:28,872 STDERR STDOUTERR:32 - 	at java.base/java.nio.file.Paths.get(Paths.java:69)
+19:48:28,872 STDERR STDOUTERR:32 - 	at org.vadere.simulator.entrypoints.cmd.commands.ScenarioRunSubCommand.run(ScenarioRunSubCommand.java:57)
+19:48:28,872 STDERR STDOUTERR:32 - 	at org.vadere.simulator.entrypoints.cmd.VadereConsole.main(VadereConsole.java:44)
+19:49:20,658   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+19:49:20,660   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+19:49:20,660 STDERR STDOUTERR:32 - topographyError in command:Illegal char <> at index 19: D:\TUM_courses\mlcmadere.v1.0.windows\VadereModelTests\Project_ex2\scenariosimea_06_corner_task3.scenario --output-dir output
+19:49:20,661 STDERR STDOUTERR:32 - java.nio.file.InvalidPathException: Illegal char <> at index 19: D:\TUM_courses\mlcmadere.v1.0.windows\VadereModelTests\Project_ex2\scenariosimea_06_corner_task3.scenario --output-dir output
+19:49:20,661 STDERR STDOUTERR:32 - 	at java.base/sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182)
+19:49:20,662 STDERR STDOUTERR:32 - 	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+19:49:20,662 STDERR STDOUTERR:32 - 	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+19:49:20,662 STDERR STDOUTERR:32 - 	at java.base/sun.nio.fs.WindowsPath.parse(WindowsPath.java:92)
+19:49:20,662 STDERR STDOUTERR:32 - 	at java.base/sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:229)
+19:49:20,662 STDERR STDOUTERR:32 - 	at java.base/java.nio.file.Path.of(Path.java:147)
+19:49:20,663 STDERR STDOUTERR:32 - 	at java.base/java.nio.file.Paths.get(Paths.java:69)
+19:49:20,663 STDERR STDOUTERR:32 - 	at org.vadere.simulator.entrypoints.cmd.commands.ScenarioRunSubCommand.run(ScenarioRunSubCommand.java:57)
+19:49:20,663 STDERR STDOUTERR:32 - 	at org.vadere.simulator.entrypoints.cmd.VadereConsole.main(VadereConsole.java:44)
+19:50:04,992   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+19:50:04,992   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+19:50:04,992  ERROR ScenarioRunSubCommand:59 - scenario-file does not exist, is not a regular file or you do not have read permissions: rimea_06_corner_task3.scenario --output-dir output
+19:51:28,448   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+19:51:28,450   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+19:51:28,451  ERROR ScenarioRunSubCommand:59 - scenario-file does not exist, is not a regular file or you do not have read permissions: rimea_06_corner_task3.scenario
+19:52:18,161   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+19:52:18,177   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+19:52:18,177  ERROR ScenarioRunSubCommand:59 - scenario-file does not exist, is not a regular file or you do not have read permissions: \scenarios\rimea_06_corner_task3.scenario --output-dir output
+19:52:27,852   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+19:52:27,853   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+19:52:27,854  ERROR ScenarioRunSubCommand:59 - scenario-file does not exist, is not a regular file or you do not have read permissions: \scenarios\rimea_06_corner_task3.scenario
+19:52:37,272   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+19:52:37,272   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+19:52:37,272  ERROR ScenarioRunSubCommand:59 - scenario-file does not exist, is not a regular file or you do not have read permissions: \scenarios\rimea_06_corner_task3.scenario
+19:56:53,105   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+19:56:53,107   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+19:56:53,107  ERROR ScenarioRunSubCommand:59 - scenario-file does not exist, is not a regular file or you do not have read permissions: \scenarios\rimea_06_corner_task3.scenario --output-dir output
+19:57:33,571   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+19:57:33,573   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+19:57:33,877 STDOUT STDOUTERR:22 - Topography Warning:
+   Target contains an obstacle. This setup works but reduces the actual size of the target. 
+   Obstacle overlaps with a source. This setup will spawn pedestrians within the obstacle.  
+
+19:57:33,882   INFO ScenarioRun:89 - Initializing scenario. Start of scenario 'rimea_06_corner_task3.scenario'...
+19:57:33,882   INFO ScenarioRun:91 - StartIt rimea_06_corner_task3.scenario
+19:57:34,016   INFO PotentialFieldDistancesBruteForce:42 - floor field initialization time:82.0[ms]
+19:57:34,019   INFO Topography:315 - Set PedestrianIdCount to start value: 2
+19:57:34,054   INFO IPotentialField:189 - floor field initialization time:19[ms]
+19:57:54,889   INFO Simulation:279 - Finished writing all output files
+19:57:54,890   INFO ScenarioRun:139 - Simulation of scenario rimea_06_corner_task3.scenario finished.
+19:59:11,758   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+19:59:11,759   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+19:59:11,760  ERROR ScenarioRunSubCommand:59 - scenario-file does not exist, is not a regular file or you do not have read permissions: \senariosimea_06_corner_task3.scenario --output-dir output
+19:59:21,601   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+19:59:21,603   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+19:59:21,604  ERROR ScenarioRunSubCommand:59 - scenario-file does not exist, is not a regular file or you do not have read permissions: \senarios\rimea_06_corner_task3.scenario --output-dir output
+09:58:08,663   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+09:58:08,679   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+09:58:08,680  ERROR ScenarioRunSubCommand:59 - scenario-file does not exist, is not a regular file or you do not have read permissions: \senarios\rimea_06_corner_task3.scenario --output-dir output
+10:04:13,692   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+10:04:13,694   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+10:04:13,694  ERROR ScenarioRunSubCommand:59 - scenario-file does not exist, is not a regular file or you do not have read permissions: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\scenarios\rimea_06_corner_task3.scenario --output-dir output
+19:17:59,659   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+19:17:59,668   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+19:17:59,669  ERROR ScenarioRunSubCommand:59 - scenario-file does not exist, is not a regular file or you do not have read permissions: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\scenarios\rimea_06_corner_task3.scenario --output-dir output
+19:18:55,809   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+19:18:55,810   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+19:18:55,811  ERROR ScenarioRunSubCommand:59 - scenario-file does not exist, is not a regular file or you do not have read permissions: rimea_06_corner_task3.scenario --output-dir output
+19:19:09,788   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+19:19:09,790   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+19:19:10,262 STDOUT STDOUTERR:22 - Topography Warning:
+   Target contains an obstacle. This setup works but reduces the actual size of the target. 
+   Obstacle overlaps with a source. This setup will spawn pedestrians within the obstacle.  
+
+19:19:10,268   INFO ScenarioRun:89 - Initializing scenario. Start of scenario 'rimea_06_corner_task3.scenario'...
+19:19:10,269   INFO ScenarioRun:91 - StartIt rimea_06_corner_task3.scenario
+19:19:10,408   INFO PotentialFieldDistancesBruteForce:42 - floor field initialization time:77.0[ms]
+19:19:10,412   INFO Topography:315 - Set PedestrianIdCount to start value: 2
+19:19:10,460   INFO IPotentialField:189 - floor field initialization time:30[ms]
+19:19:31,310   INFO Simulation:279 - Finished writing all output files
+19:19:31,311   INFO ScenarioRun:139 - Simulation of scenario rimea_06_corner_task3.scenario finished.
+19:20:50,428   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+19:20:50,429   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+19:20:50,430  ERROR ScenarioRunSubCommand:59 - scenario-file does not exist, is not a regular file or you do not have read permissions: rimea_06_corner_task3.scenario
+19:21:23,779   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+19:21:23,781   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+19:21:23,782  ERROR ScenarioRunSubCommand:59 - scenario-file does not exist, is not a regular file or you do not have read permissions: rimea_06_corner_task3.scenario
+19:22:25,885   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+19:22:25,886   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+19:22:25,887  ERROR ScenarioRunSubCommand:59 - scenario-file does not exist, is not a regular file or you do not have read permissions: rimea_06_corner_task3.scenario
+19:23:04,151   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+19:23:04,153   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+19:23:04,188  ERROR ScenarioRunSubCommand:59 - scenario-file does not exist, is not a regular file or you do not have read permissions: rimea_06_corner_task3.scenario
+19:26:26,274   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+19:26:26,275   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+19:26:26,276  ERROR ScenarioRunSubCommand:59 - scenario-file does not exist, is not a regular file or you do not have read permissions: rimea_06_corner_task3.scenario
+19:27:13,165   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+19:27:13,167   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+19:27:13,168  ERROR ScenarioRunSubCommand:59 - scenario-file does not exist, is not a regular file or you do not have read permissions: \scenarios\rimea_06_corner_task3.scenario
+19:27:34,889   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+19:27:34,890   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+19:27:34,891  ERROR ScenarioRunSubCommand:59 - scenario-file does not exist, is not a regular file or you do not have read permissions: \scenarios\rimea_06_corner_task3.scenario
+19:28:22,135   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+19:28:22,137   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+19:28:22,137  ERROR ScenarioRunSubCommand:59 - scenario-file does not exist, is not a regular file or you do not have read permissions: rimea_06_corner_task3.scenario
+19:29:56,386   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+19:29:56,388   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+19:29:56,686 STDOUT STDOUTERR:22 - Topography Warning:
+   Target contains an obstacle. This setup works but reduces the actual size of the target. 
+   Obstacle overlaps with a source. This setup will spawn pedestrians within the obstacle.  
+
+19:29:56,693   INFO ScenarioRun:89 - Initializing scenario. Start of scenario 'rimea_06_corner_task3.scenario'...
+19:29:56,694   INFO ScenarioRun:91 - StartIt rimea_06_corner_task3.scenario
+19:29:56,856   INFO PotentialFieldDistancesBruteForce:42 - floor field initialization time:101.0[ms]
+19:29:56,859   INFO Topography:315 - Set PedestrianIdCount to start value: 2
+19:29:56,899   INFO IPotentialField:189 - floor field initialization time:25[ms]
+19:30:17,752   INFO Simulation:279 - Finished writing all output files
+19:30:17,753   INFO ScenarioRun:139 - Simulation of scenario rimea_06_corner_task3.scenario finished.
+19:54:31,142   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+19:54:31,157   INFO ScenarioRunSubCommand:51 - Created output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\VadereModelTests\Project_ex2\output
+19:54:31,159  ERROR ScenarioRunSubCommand:59 - scenario-file does not exist, is not a regular file or you do not have read permissions: D:\TUM_courses\mlcm\vadere.v1.0.windows\VadereModelTests\Project_ex2\scenarios\rimea_06_corner.scenario
+19:55:31,286   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+19:55:31,287   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+19:55:31,945 STDOUT STDOUTERR:22 - Topography Warning:
+   Target contains an obstacle. This setup works but reduces the actual size of the target. 
+   Obstacle overlaps with a source. This setup will spawn pedestrians within the obstacle.  
+
+19:55:31,950   INFO ScenarioRun:89 - Initializing scenario. Start of scenario 'rimea_06_corner'...
+19:55:31,951   INFO ScenarioRun:91 - StartIt rimea_06_corner
+19:55:32,129   INFO PotentialFieldDistancesBruteForce:42 - floor field initialization time:79.0[ms]
+19:55:32,132   INFO Topography:315 - Set PedestrianIdCount to start value: 1
+19:55:32,181   INFO IPotentialField:189 - floor field initialization time:25[ms]
+19:55:53,030   INFO Simulation:279 - Finished writing all output files
+19:55:53,031   INFO ScenarioRun:139 - Simulation of scenario rimea_06_corner finished.
+20:45:30,662   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+20:45:30,663   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+20:45:30,950 STDOUT STDOUTERR:22 - Topography Warning:
+   Target contains an obstacle. This setup works but reduces the actual size of the target. 
+   Obstacle overlaps with a source. This setup will spawn pedestrians within the obstacle.  
+
+20:45:30,955   INFO ScenarioRun:89 - Initializing scenario. Start of scenario 'rimea_06_corner_task3.scenario'...
+20:45:30,956   INFO ScenarioRun:91 - StartIt rimea_06_corner_task3.scenario
+20:45:31,094   INFO PotentialFieldDistancesBruteForce:42 - floor field initialization time:90.0[ms]
+20:45:31,098   INFO Topography:315 - Set PedestrianIdCount to start value: 2
+20:45:31,139   INFO IPotentialField:189 - floor field initialization time:17[ms]
+20:45:52,031   INFO Simulation:279 - Finished writing all output files
+20:45:52,033   INFO ScenarioRun:139 - Simulation of scenario rimea_06_corner_task3.scenario finished.
+20:46:01,576   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+20:46:01,577   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+20:46:01,859 STDOUT STDOUTERR:22 - Topography Warning:
+   Target contains an obstacle. This setup works but reduces the actual size of the target. 
+   Obstacle overlaps with a source. This setup will spawn pedestrians within the obstacle.  
+
+20:46:01,864   INFO ScenarioRun:89 - Initializing scenario. Start of scenario 'rimea_06_corner_task3.scenario'...
+20:46:01,864   INFO ScenarioRun:91 - StartIt rimea_06_corner_task3.scenario
+20:46:01,997   INFO PotentialFieldDistancesBruteForce:42 - floor field initialization time:84.0[ms]
+20:46:02,001   INFO Topography:315 - Set PedestrianIdCount to start value: 2
+20:46:02,049   INFO IPotentialField:189 - floor field initialization time:30[ms]
+20:46:22,906   INFO Simulation:279 - Finished writing all output files
+20:46:22,907   INFO ScenarioRun:139 - Simulation of scenario rimea_06_corner_task3.scenario finished.
+22:18:56,002   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+22:18:56,004   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+22:18:56,005  ERROR ScenarioRunSubCommand:59 - scenario-file does not exist, is not a regular file or you do not have read permissions: rimea_06_corner_task3.scenario
+22:19:09,306   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+22:19:09,308   INFO ScenarioRunSubCommand:54 - Use output directory: D:\TUM_courses\mlcm\vadere.v1.0.windows\Project2\output
+22:19:09,606 STDOUT STDOUTERR:22 - Topography Warning:
+   Target contains an obstacle. This setup works but reduces the actual size of the target. 
+   Obstacle overlaps with a source. This setup will spawn pedestrians within the obstacle.  
+
+22:19:09,611   INFO ScenarioRun:89 - Initializing scenario. Start of scenario 'rimea_06_corner_task3.scenario'...
+22:19:09,612   INFO ScenarioRun:91 - StartIt rimea_06_corner_task3.scenario
+22:19:09,763   INFO PotentialFieldDistancesBruteForce:42 - floor field initialization time:102.0[ms]
+22:19:09,765   INFO Topography:315 - Set PedestrianIdCount to start value: 2
+22:19:09,807   INFO IPotentialField:189 - floor field initialization time:25[ms]
+22:19:30,637   INFO Simulation:279 - Finished writing all output files
+22:19:30,638   INFO ScenarioRun:139 - Simulation of scenario rimea_06_corner_task3.scenario finished.

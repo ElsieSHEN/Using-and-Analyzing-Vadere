@@ -85,10 +85,10 @@ public class SIRGroupModel extends AbstractGroupModel<SIRGroup> {
 		else {
 			// ********************
 			// Initialize Recovered state
-			if(!getGroupsById().containsKey(SIRType.ID_SUSCEPTIBLE.ordinal()))
+			if(!getGroupsById().containsKey(SIRType.ID_RECOVERED.ordinal()))
 			{
-				SIRGroup g = getNewGroup(SIRType.ID_SUSCEPTIBLE.ordinal(), Integer.MAX_VALUE/2);
-				getGroupsById().put(SIRType.ID_SUSCEPTIBLE.ordinal(), g);
+				SIRGroup g = getNewGroup(SIRType.ID_RECOVERED.ordinal(), Integer.MAX_VALUE/2);
+				getGroupsById().put(SIRType.ID_RECOVERED.ordinal(), g);
 			}
 			// ********************
 			if(!getGroupsById().containsKey(SIRType.ID_SUSCEPTIBLE.ordinal()))
