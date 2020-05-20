@@ -83,14 +83,14 @@ public class SIRGroupModel extends AbstractGroupModel<SIRGroup> {
 			return SIRType.ID_INFECTED.ordinal();
 		}
 		else {
-			// ********************
+
 			// Initialize Recovered state
 			if(!getGroupsById().containsKey(SIRType.ID_RECOVERED.ordinal()))
 			{
 				SIRGroup g = getNewGroup(SIRType.ID_RECOVERED.ordinal(), Integer.MAX_VALUE/2);
 				getGroupsById().put(SIRType.ID_RECOVERED.ordinal(), g);
 			}
-			// ********************
+
 			if(!getGroupsById().containsKey(SIRType.ID_SUSCEPTIBLE.ordinal()))
 			{
 				SIRGroup g = getNewGroup(SIRType.ID_SUSCEPTIBLE.ordinal(), Integer.MAX_VALUE/2);
@@ -202,25 +202,24 @@ public class SIRGroupModel extends AbstractGroupModel<SIRGroup> {
 	@Override
 	public void update(final double simTimeInSec) {
 		if (simTimeInSec >= tempCounter) {
-			System.out.println("tempcounter does update at: " + simTimeInSec);
+			//print statement to test decoupling of sim time step and infection
+			//System.out.println("tempcounter does update at: " + simTimeInSec);
+
 			// check the positions of all pedestrians and switch groups to INFECTED (or REMOVED).
 			DynamicElementContainer<Pedestrian> c = topography.getPedestrianDynamicElements();
 
 			//implement recovered
-			// *********************
 			if (c.getElements().size() > 0) {
 				for (Pedestrian p : c.getElements()) {
-					//check all infected ped and set a chance to get recover
+					//check all infected ped and set a chance to get recoverd. more detailed description in the report
 					if (getGroup(p).getID() == SIRType.ID_INFECTED.ordinal() && this.random.nextDouble() < attributesSIRG.getRecoverRate()) {
 						SIRGroup g = getGroup(p);
 						elementRemoved(p);
 						assignToGroup(p, SIRType.ID_RECOVERED.ordinal());
 					}
 
-					//*************
 					//not sure which container?
 					// List<Pedestrian> grid = linkedgrid.getObjects(p.getPosition(), attributesSIRG.getInfectionMaxDistance())
-					//*************
 
 					// loop over neighbors and set infected if we are close
 					for (Pedestrian p_neighbor : c.getElements()) {
