@@ -80,7 +80,7 @@
       },
       "org.vadere.state.attributes.models.AttributesSIRG" : {
         "infectionsAtStart" : 10,
-        "infectionRate" : 0.01,
+        "infectionRate" : 0.05,
         "recoverRate" : 0.0,
         "infectionMaxDistance" : 1.0
       },
@@ -107,8 +107,8 @@
       }
     },
     "attributesSimulation" : {
-      "finishTime" : 200.0,
-      "simTimeStepLength" : 0.2,
+      "finishTime" : 80.0,
+      "simTimeStepLength" : 0.1,
       "realTimeSimTimeRatio" : 0.1,
       "writeSimulationData" : true,
       "visualizationEnabled" : true,
@@ -180,10 +180,10 @@
       "sources" : [ {
         "id" : 4,
         "shape" : {
-          "x" : 3.0,
-          "y" : 1.0,
-          "width" : 1.0,
-          "height" : 18.0,
+          "x" : 2.3,
+          "y" : 1.033434650455927,
+          "width" : 0.8095238095238093,
+          "height" : 17.99392097264438,
           "type" : "RECTANGLE"
         },
         "interSpawnTimeDistribution" : "org.vadere.state.scenario.ConstantDistribution",
@@ -202,10 +202,10 @@
       }, {
         "id" : 3,
         "shape" : {
-          "x" : 36.0,
-          "y" : 1.0,
-          "width" : 0.9,
-          "height" : 18.0,
+          "x" : 37.001013171225935,
+          "y" : 1.1955420466058764,
+          "width" : 0.798986828774062,
+          "height" : 17.872340425531917,
           "type" : "RECTANGLE"
         },
         "interSpawnTimeDistribution" : "org.vadere.state.scenario.ConstantDistribution",
